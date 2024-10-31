@@ -6,13 +6,8 @@ Vue.use(Router)
 const login = r => require.ensure([], () => r(require('@/page/login')), 'login');
 const manage = r => require.ensure([], () => r(require('@/page/manage')), 'manage');
 const home = r => require.ensure([], () => r(require('@/page/home')), 'home');
-const addShop = r => require.ensure([], () => r(require('@/page/addShop')), 'addShop');
 const userList = r => require.ensure([], () => r(require('@/page/userList')), 'userList');
 const adminList = r => require.ensure([], () => r(require('@/page/adminList')), 'adminList');
-const visitor = r => require.ensure([], () => r(require('@/page/visitor')), 'visitor');
-const newMember = r => require.ensure([], () => r(require('@/page/newMember')), 'newMember');
-const uploadImg = r => require.ensure([], () => r(require('@/page/uploadImg')), 'uploadImg');
-const vueEdit = r => require.ensure([], () => r(require('@/page/vueEdit')), 'vueEdit');
 const adminSet = r => require.ensure([], () => r(require('@/page/adminSet')), 'adminSet');
 const sendMessage = r => require.ensure([], () => r(require('@/page/sendMessage')), 'sendMessage');
 const explain = r => require.ensure([], () => r(require('@/page/explain')), 'explain');
@@ -31,10 +26,6 @@ const routes = [
 			component: home,
 			meta: [],
 		},{
-			path: '/addShop',
-			component: addShop,
-			meta: ['添加数据', '添加商铺'],
-		},{
 			path: '/userList',
 			component: userList,
 			meta: ['数据管理', '用户列表'],
@@ -42,22 +33,6 @@ const routes = [
 			path: '/adminList',
 			component: adminList,
 			meta: ['数据管理', '管理员列表'],
-		},{
-			path: '/visitor',
-			component: visitor,
-			meta: ['图表', '用户分布'],
-		},{
-			path: '/newMember',
-			component: newMember,
-			meta: ['图表', '用户数据'],
-		},{
-			path: '/uploadImg',
-			component: uploadImg,
-			meta: ['文本编辑', 'MarkDown'],
-		},{
-			path: '/vueEdit',
-			component: vueEdit,
-			meta: ['编辑', '文本编辑'],
 		},{
 			path: '/adminSet',
 			component: adminSet,

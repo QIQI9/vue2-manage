@@ -20,26 +20,26 @@
                             >管理员列表</el-menu-item
                         >
                     </el-submenu>
-                    <el-submenu index="3">
+                    <!-- <el-submenu index="3">
                         <template slot="title"
                             ><i class="el-icon-plus"></i>添加数据</template
                         >
                         <el-menu-item index="addShop">添加商铺</el-menu-item>
-                    </el-submenu>
-                    <el-submenu index="4">
+                    </el-submenu> -->
+                    <!-- <el-submenu index="4">
                         <template slot="title"
                             ><i class="el-icon-star-on"></i>图表</template
                         >
                         <el-menu-item index="visitor">用户分布</el-menu-item>
-                        <!-- <el-menu-item index="newMember">用户数据</el-menu-item> -->
-                    </el-submenu>
-                    <el-submenu index="5">
+                        <el-menu-item index="newMember">用户数据</el-menu-item>
+                    </el-submenu> -->
+                    <!-- <el-submenu index="5">
                         <template slot="title"
                             ><i class="el-icon-edit"></i>编辑</template
                         >
-                        <!-- <el-menu-item index="uploadImg">上传图片</el-menu-item> -->
+                        <el-menu-item index="uploadImg">上传图片</el-menu-item>
                         <el-menu-item index="vueEdit">文本编辑</el-menu-item>
-                    </el-submenu>
+                    </el-submenu> -->
                     <el-submenu index="6">
                         <template slot="title"
                             ><i class="el-icon-setting"></i>设置</template

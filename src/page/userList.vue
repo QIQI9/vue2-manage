@@ -85,7 +85,10 @@
                 >
                 </el-pagination>
             </div>
-            <el-dialog title="修改成员信息" :visible.sync="dialogFormVisible">
+            <el-dialog
+                :title="actionType === 'add' ? '添加成员信息' : '修改成员信息'"
+                :visible.sync="dialogFormVisible"
+            >
                 <el-form :model="selectTable">
                     <el-form-item label="成员名称" label-width="100px">
                         <el-input
